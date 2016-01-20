@@ -1,0 +1,30 @@
+{
+	"name": "AWK",
+	"displayName": "AWK",
+	"description": "AWK syntax highlighting for Visual Studio Code",
+	"version": "0.0.1",
+	"publisher": "luggage66",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages"
+	],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/luggage66/vscode-awk.git"
+    },
+	"contributes": {
+		"languages": [{
+			"id": "awk",
+			"aliases": ["AWK", "awk"],
+			"extensions": [".awk"],
+			"configuration": "./awk.configuration.json"
+		}],
+		"grammars": [{
+			"language": "awk",
+			"scopeName": "source.awk",
+			"path": "./syntaxes/awk.tmLanguage"
+		}]
+	}
+}
